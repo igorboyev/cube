@@ -117,6 +117,62 @@ body {
   transition: transform 0.2s ease-in;
 }
 
+.front2 {
+  transform: translateZ(99px);
+}
+
+.back2 {
+  transform: translateZ(-99px) rotateY(180deg);
+}
+
+.top2 {
+  transform: rotateX(-270deg) translateY(-100px) translateZ(-1px);
+  transform-origin: top center;
+}
+
+.bottom2 {
+  transform: rotateX(270deg) translateY(100px) translateZ(-1px);
+  transform-origin: bottom center;
+}
+
+.left2 {
+  transform: rotateY(270deg) translateX(-100px) translateZ(-1px);
+  transform-origin: top left;
+}
+
+.right2 {
+  transform: rotateY(-270deg) translateX(100px) translateZ(-1px);
+  transform-origin: top right;
+}
+
+.wrap:hover .front2 {
+  transform: translateZ(199px);
+}
+
+.wrap:hover .back2 {
+  transform: translateZ(-199px) rotateY(180deg);
+}
+
+.wrap:hover .top2 {
+  transform: rotateX(-270deg) translateZ(99px) translateY(-100px);
+}
+
+.wrap:hover .bottom2 {
+  transform: rotateX(270deg) translateZ(99px) translateY(100px);
+}
+
+.wrap:hover .left2 {
+  transform: rotateY(270deg) translateZ(99px) translateX(-100px);
+}
+
+.wrap:hover .right2 {
+  transform: rotateY(-270deg) translateZ(99px) translateX(100px);
+}
+
+div:nth-child(even) {
+  background-image: url(./image/creeper.png);
+}
+
 a {
   text-decoration: none;
 }
