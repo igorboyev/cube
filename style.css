@@ -10,9 +10,17 @@ body {
   margin: 50px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: gray;
+  background-image: url(./image/mine.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vh;
+  min-height: 471px;
 }
 
 .wrap {
+  margin: 0 30px auto;
+  max-width: 350px;
+  height: 300px;
   margin-top: 200px;
   perspective: 1000px;
   perspective-origin: 50% 50%;
@@ -32,9 +40,11 @@ body {
   padding: 10px;
   height: 100%;
   width: 100%;
-  opacity: 0.9;
   background-color: green;
-  border: 1px solid black;
+  border: 1px solid white;
+  background-image: url(./image/tnt.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .front {
